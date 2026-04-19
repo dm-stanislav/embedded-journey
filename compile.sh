@@ -62,7 +62,7 @@ OUT="$SCRIPT_DIR/build/${REL%.c}"
 mkdir -p "$(dirname "$OUT")"
 
 CC=${CC:-cc}
-CFLAGS=${CFLAGS:--Wall -Wextra -std=c11}
+CFLAGS=${CFLAGS:--Wall -Wextra -std=gnu11}
 
 $CC $CFLAGS -o "$OUT" "$SRC_ABS"
 
